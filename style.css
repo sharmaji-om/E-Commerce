@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.promo-banner {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.promo-banner p {
+    margin: 0;
+}
+
+.promo-banner a {
+    color: #007bff;
+    text-decoration: none;
+}
+.wishlist-container, .just-for-you {
+    background-color: #fff;
+    padding: 20px;
+    
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist-header, .just-for-you-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.move-all-button, .see-all-button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.move-all-button:hover, .see-all-button:hover {
+    background-color: #0056b3;
+}
+
+.wishlist-items, .just-for-you-items {
+    display: flex;
+    
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.item {
+    background-color: #80808000;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.details {
+    text-align: center;
+    width: 100%;
+}
+
+
+.details h3 {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+button {
+    background-color: #332D5b;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+
+button:hover {
+    background-color:#332D5B ;
+}
+
+   .row{
+    background-color: #332D5b;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+   } 
+   @media (max-width: 768px) {
+    .wishlist-items, .just-for-you-items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .move-all-button, .see-all-button {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .wishlist-header, .just-for-you-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
